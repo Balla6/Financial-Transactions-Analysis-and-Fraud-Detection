@@ -20,8 +20,8 @@ This project analyzes a dataset of financial transactions to uncover patterns, d
 - **High-Risk Transactions**:
   - Scams account for 60.8% of high-risk transactions.
   - Phishing transactions make up 39.2%.
-- **Top Risk-Prone Region**: North America leads in scam transactions, while phishing is evenly distributed across regions.
-- **Peak Transaction Times**:
+- **Regions with the Most High-Risk Transactions**: North America leads in scam transactions, while phishing is evenly distributed across regions.
+- **Transaction Trends**:
   - Wednesdays and Saturdays have the highest transaction volumes.
   - Sundays and Mondays see the lowest activity.
 - **User Insights**:
@@ -49,10 +49,22 @@ This project analyzes a dataset of financial transactions to uncover patterns, d
 
 ### 6. **Visualizations/**
 - Saved Power BI dashboard screenshots:
-  - `high_risk_transactions_by_region.png`: Regional high-risk transaction trends.
+  - `total_transacted_amount_by_day.png`: Total transaction amount by weekday.
+  - `total_high_risk_transactions_by_day.png`: High-risk transactions by weekday.
+  - `high_risk_transactions_by_region.png`: High-risk transactions by region.
   - `scam_vs_phishing_proportions.png`: Proportions of scams and phishing.
-  - `transaction_trends_by_weekday.png`: Trends by day of the week.
+  - `average_transaction_amount_by_region.png`: Average transaction amount by region.
   - `top_sending_addresses.png`: Top contributing users by transaction volume.
+  - `top_receiving_addresses.png`: Top receiving users by transaction volume.
+  - `scam_vs_phishing_by_region.png`: Scam and phishing transactions by region.
+  - `transaction_trends_by_hour.png`: Hourly transaction activity trends.
+  - `transaction_trends_by_month.png`: Monthly transaction activity trends.
+  - `high_value_transactions_by_region.png`: High-value transactions by region.
+  - `proportions_of_transaction_types.png`: Breakdown of transaction types.
+  - `cumulative_transactions_by_type.png`: Running total of transactions by type.
+  - `user_login_frequency_vs_risk_scores.png`: Correlation between login frequency and risk scores.
+  - `high_risk_transactions_by_age_group.png`: High-risk transactions by age group.
+  - `session_duration_vs_transaction_amounts.png`: Relationship between session durations and transaction values.
 
 ---
 
@@ -73,27 +85,32 @@ This project includes both Python-generated charts and Power BI dashboards:
 ### Power BI Dashboard
 This dashboard provides interactive insights into transaction trends, fraud detection, and user behavior.
 
-#### Saved Visualizations:
-1. **High-Risk Transactions by Region**:
-   - Visualizes scam and phishing proportions across regions.
-2. **Scam vs Phishing Proportions**:
-   - Shows the relative proportions of high-risk transaction types.
-3. **Transaction Trends by Day of the Week**:
-   - Highlights peak transaction days and low-activity periods.
-4. **Top Sending and Receiving Addresses**:
-   - Identifies users contributing to high transaction volumes.
+**Access the Power BI dashboard here: [Interactive Power BI Dashboard](https://app.powerbi.com/groups/me/reports/a2bcaf0d-e17e-400f-a45c-3601a2ba9fd0/00d54f939bd431bc9688?experience=power-bi)**
 
-### Python-Generated Visualizations
-- Risk Score Correlation: Heatmap visualizing correlations between numerical variables like risk scores and session durations.
-- High-Risk Transactions: Scatter plots showing the distribution of scams and phishing across time.
-- Anomaly Detection: Visualizations highlighting outliers in transaction amounts and user behaviors.
+#### Saved Visualizations:
+1. **Total Transacted Amount by Day of the Week**
+2. **Total High-Risk Transactions by Day of the Week**
+3. **High-Risk Transactions by Region**
+4. **Scam vs Phishing Proportions**
+5. **Average Transaction Amount by Region**
+6. **Top Sending Addresses by Transaction Volume**
+7. **Top Receiving Addresses by Transaction Volume**
+8. **Scam vs Phishing Transactions by Region**
+9. **Transaction Trends by Hour of the Day**
+10. **Transaction Trends by Month**
+11. **High-Value Transactions by Region**
+12. **Proportions of Transaction Types**
+13. **Cumulative Total Transactions by Type**
+14. **User Login Frequency vs Risk Scores**
+15. **High-Risk Transactions by Age Group**
+16. **Session Duration vs Transaction Amounts**
 
 ---
 
 ## How to Use
 1. **View the Analysis**:
    - Check `report.md` for detailed insights and recommendations.
-   - Explore Power BI dashboards using saved screenshots or import the cleaned dataset (`transaction_data.csv`) for interactive exploration.
+   - Explore Power BI dashboards using the provided [Interactive Power BI Dashboard link](https://app.powerbi.com/groups/me/reports/a2bcaf0d-e17e-400f-a45c-3601a2ba9fd0/00d54f939bd431bc9688?experience=power-bi).
 
 2. **Run the Python Notebook**:
    - Use `Financial Transactions Tracker.ipynb` to preprocess data, perform statistical analysis, and train machine learning models.
