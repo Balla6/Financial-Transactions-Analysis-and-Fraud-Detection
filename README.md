@@ -117,10 +117,6 @@ This dashboard provides interactive insights into transaction trends, fraud dete
 
 3. **Execute SQL Scripts**:
    - Use `FINANCIAL TRANSACTION TRACKER ANALYSIS.sql` for advanced data validation, high-risk transaction analysis, and trend exploration.
-
-4. **Explore the Visualizations**:
-   - Access saved Power BI images in the `Visualizations/` folder.
-
 ---
 
 ## Conclusion
