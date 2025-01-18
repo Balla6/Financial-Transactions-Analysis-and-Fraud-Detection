@@ -1,95 +1,110 @@
 # Financial Transactions Analysis and Fraud Detection
 
 ## Overview
-This project analyzes financial transactions to identify fraudulent activities, uncover patterns, and provide actionable insights. The analysis utilizes Python, SQL, and Power BI to detect anomalies, generate visualizations, and present findings that aim to enhance fraud detection and improve decision-making for financial institutions.
+This project analyzes a dataset of financial transactions to uncover patterns, detect fraudulent activities, and provide actionable insights. The dataset includes transaction types, amounts, user activity, and regional details, enabling an in-depth analysis of high-risk transactions, user behavior, and temporal trends. The project employs **Python**, **SQL**, and **Power BI** to demonstrate comprehensive data analysis and visualization workflows.
 
 ---
 
 ## Goals
-1. Detect high-risk transactions (e.g., scams, phishing) using SQL queries and Python models.
-2. Understand transaction patterns across regions, days, and users.
-3. Highlight high-value sending and receiving addresses for enhanced monitoring.
-4. Provide actionable recommendations to mitigate fraud and optimize business strategies.
-5. Demonstrate data cleaning, analysis, and visualization skills using Python and Power BI.
+- Validate data integrity to ensure a reliable dataset for analysis.
+- Explore transaction trends and patterns across time, regions, and users.
+- Detect and analyze high-risk transactions such as scams and phishing.
+- Segment users based on behavior and risk scores.
+- Deliver actionable recommendations to improve fraud prevention strategies.
+- Visualize insights using interactive dashboards in Power BI.
 
 ---
 
 ## Key Findings
-- **Total Transacted Amount:** USD 45,687,312.50 (example placeholder).
-- **Most Fraud-Prone Day:** Monday shows the highest number of high-risk transactions.
-- **Top Fraud Types:** Scams (60.8%) and phishing (39.2%) dominate high-risk activities.
-- **Top Region by Transactions:** North America leads in transaction volume and fraud risk.
-- **High-Value Transactions:** A few sending and receiving addresses dominate transactions, requiring further scrutiny.
+- **Total Transactions Analyzed**: 78,600 rows of transaction data.
+- **High-Risk Transactions**:
+  - Scams account for 60.8% of high-risk transactions.
+  - Phishing transactions make up 39.2%.
+- **Top Risk-Prone Region**: North America leads in scam transactions, while phishing is evenly distributed across regions.
+- **Peak Transaction Times**:
+  - Wednesdays and Saturdays have the highest transaction volumes.
+  - Sundays and Mondays see the lowest activity.
+- **User Insights**:
+  - A small group of users accounts for the majority of high-risk transactions.
+  - Longer session durations correlate with higher transaction risks.
 
 ---
 
 ## Files in This Repository
-
 ### 1. **README.md**
-- Provides an overview of the project and repository structure.
+- Project overview and repository structure.
 
 ### 2. **report.md**
-- Detailed analysis report with insights, visualizations, and actionable recommendations.
+- Detailed analysis report with insights and actionable recommendations.
 
 ### 3. **data/**
-- `transactions_dataset.csv`: The raw dataset containing financial transaction records.
+- `metaverse_transactions_dataset.csv`: Raw dataset sourced from Kaggle.
+- `transaction_data.csv`: Cleaned and preprocessed dataset used for analysis.
 
 ### 4. **Python_Analysis/**
-- `data_processing.py`: Script for data cleaning and preparation.
-- `fraud_detection.py`: Fraud detection logic and implementation of machine learning models.
+- `Financial Transactions Tracker.ipynb`: Jupyter notebook for data cleaning, exploratory data analysis (EDA), and machine learning-based fraud detection.
 
 ### 5. **SQL_Analysis/**
-- `data_validation.sql`: SQL queries for data integrity checks.
-- `fraud_queries.sql`: SQL queries for detecting fraud, including high-risk transactions.
+- `FINANCIAL TRANSACTION TRACKER ANALYSIS.sql`: SQL queries for data validation, exploratory analysis, and fraud detection.
 
 ### 6. **Visualizations/**
 - Saved Power BI dashboard screenshots:
-  - `total_transacted_amount_by_day.png`
-  - `total_high_risk_transactions_by_day.png`
-  - `high_risk_transactions_by_region.png`
-  - `scam_vs_phishing_transactions.png`
+  - `high_risk_transactions_by_region.png`: Regional high-risk transaction trends.
+  - `scam_vs_phishing_proportions.png`: Proportions of scams and phishing.
+  - `transaction_trends_by_weekday.png`: Trends by day of the week.
+  - `top_sending_addresses.png`: Top contributing users by transaction volume.
 
 ---
 
 ## Datasets
+### Original Dataset
+- **File**: `metaverse_transactions_dataset.csv`
+- **Description**: The raw dataset contains detailed records of financial transactions, including timestamps, transaction types, amounts, and regional data. This serves as the foundation for all analysis.
 
-### **Original Dataset**
-- **File:** `transactions_datas.csv`
-- **Description:** The raw dataset containing transaction details such as timestamp, sending/receiving addresses, transaction amounts, and risk categories. This dataset serves as the foundation for analysis.
+### Cleaned Dataset
+- **File**: `transaction_data.csv`
+- **Description**: The cleaned dataset, prepared using Python, includes additional features such as risk scores and high-risk indicators. It serves as the input for SQL analysis and Power BI visualizations.
 
 ---
 
 ## Visualizations
-
-This project features Power BI dashboards and Python-generated visualizations to provide in-depth insights:
+This project includes both Python-generated charts and Power BI dashboards:
 
 ### Power BI Dashboard
-Interactive Power BI dashboards are included to explore transaction trends, fraud patterns, and regional performance.
+This dashboard provides interactive insights into transaction trends, fraud detection, and user behavior.
 
 #### Saved Visualizations:
-1. **Total Transacted Amount by Day of the Week:** Highlights transaction activity trends across weekdays.
-2. **High-Risk Transactions by Region:** Regional distribution of high-risk transactions.
-3. **Scam vs Phishing Transactions:** Breakdown of scam and phishing transaction proportions.
-4. **Top Sending and Receiving Addresses:** Top contributing addresses by transaction volume.
-5. **Proportion of High-Risk Transactions by Transaction Type:** Analysis of fraud types.
+1. **High-Risk Transactions by Region**:
+   - Visualizes scam and phishing proportions across regions.
+2. **Scam vs Phishing Proportions**:
+   - Shows the relative proportions of high-risk transaction types.
+3. **Transaction Trends by Day of the Week**:
+   - Highlights peak transaction days and low-activity periods.
+4. **Top Sending and Receiving Addresses**:
+   - Identifies users contributing to high transaction volumes.
 
 ### Python-Generated Visualizations
-- Fraud Detection Heatmap: Correlation between transaction features and risk levels.
-- Quantity Ordered Distribution: Histogram showing transaction patterns by volume.
-- Risk Categories Distribution: Bar chart depicting low, medium, and high-risk transactions.
+- Risk Score Correlation: Heatmap visualizing correlations between numerical variables like risk scores and session durations.
+- High-Risk Transactions: Scatter plots showing the distribution of scams and phishing across time.
+- Anomaly Detection: Visualizations highlighting outliers in transaction amounts and user behaviors.
 
 ---
 
 ## How to Use
+1. **View the Analysis**:
+   - Check `report.md` for detailed insights and recommendations.
+   - Explore Power BI dashboards using saved screenshots or import the cleaned dataset (`transaction_data.csv`) for interactive exploration.
 
-### View the Analysis:
-1. Read the **report.md** for detailed insights and findings.
-2. Explore the saved Power BI dashboard images in the `Visualizations/` folder.
+2. **Run the Python Notebook**:
+   - Use `Financial Transactions Tracker.ipynb` to preprocess data, perform statistical analysis, and train machine learning models.
 
-### Run the Code:
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Balla6/Financial-Transactions-Analysis-and-Fraud-Detection.git
+3. **Execute SQL Scripts**:
+   - Use `FINANCIAL TRANSACTION TRACKER ANALYSIS.sql` for advanced data validation, high-risk transaction analysis, and trend exploration.
 
-### Conclusion
-This project demonstrates how advanced data analysis techniques, combined with visualization tools, can effectively uncover fraud and improve financial decision-making. By leveraging Python, SQL, and Power BI, the analysis provides actionable recommendations to minimize risks and enhance operational efficiency.
+4. **Explore the Visualizations**:
+   - Access saved Power BI images in the `Visualizations/` folder.
+
+---
+
+## Conclusion
+This project showcases the power of data-driven analysis in uncovering fraud and enhancing operational efficiency. By combining Python, SQL, and Power BI, it provides a comprehensive approach to identifying risks, understanding transaction patterns, and making informed decisions. The insights and recommendations empower organizations to proactively address vulnerabilities and optimize performance.
