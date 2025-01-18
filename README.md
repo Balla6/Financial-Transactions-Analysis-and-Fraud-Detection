@@ -46,26 +46,6 @@ This project analyzes a dataset of financial transactions to uncover patterns, d
 
 ### 5. **SQL_Analysis/**
 - `FINANCIAL TRANSACTION TRACKER ANALYSIS.sql`: SQL queries for data validation, exploratory analysis, and fraud detection.
-
-### 6. **Visualizations/**
-- Saved Power BI dashboard screenshots:
-  - `total_transacted_amount_by_day.png`: Total transaction amount by weekday.
-  - `total_high_risk_transactions_by_day.png`: High-risk transactions by weekday.
-  - `high_risk_transactions_by_region.png`: High-risk transactions by region.
-  - `scam_vs_phishing_proportions.png`: Proportions of scams and phishing.
-  - `average_transaction_amount_by_region.png`: Average transaction amount by region.
-  - `top_sending_addresses.png`: Top contributing users by transaction volume.
-  - `top_receiving_addresses.png`: Top receiving users by transaction volume.
-  - `scam_vs_phishing_by_region.png`: Scam and phishing transactions by region.
-  - `transaction_trends_by_hour.png`: Hourly transaction activity trends.
-  - `transaction_trends_by_month.png`: Monthly transaction activity trends.
-  - `high_value_transactions_by_region.png`: High-value transactions by region.
-  - `proportions_of_transaction_types.png`: Breakdown of transaction types.
-  - `cumulative_transactions_by_type.png`: Running total of transactions by type.
-  - `user_login_frequency_vs_risk_scores.png`: Correlation between login frequency and risk scores.
-  - `high_risk_transactions_by_age_group.png`: High-risk transactions by age group.
-  - `session_duration_vs_transaction_amounts.png`: Relationship between session durations and transaction values.
-
 ---
 
 ## Datasets
